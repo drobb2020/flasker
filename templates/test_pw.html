@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% if email %}
+    <div class="container mt-2 mb-2">
+      <h1>Hello {{ email }}!</h1>
+      <h1>Password: {{ password }}</h1>
+      <div>
+          <img class="img-responsive" src="{{ url_for('static', filename='images/img-01-sm.jpg') }}" alt="Edinburgh">
+      </div>
+      <div>
+        <h2>I found this information:</h2>
+        <p>Name: {{ pw_to_check.name }}</p>
+        <p>Email: {{ pw_to_check.email }}</p>
+        <p>PW: {{ pw_to_check.password_hash }}</p>
+        <p>Passed: {{ passed }}</p>
+      </div>
+    </div>
+  {% else %}
+  <h1>What's your email and password?</h1>
+    <form method="POST" class="shadow p-3 mt-1 mb-5 bg-body rounded">
+      {{ form.hidden_tag() }}
+      {{ form.email.label(class="form-label") }}
+      {{ form.email(class="form-control mb-3") }}
+      {{ form.password_hash.label(class="form-label") }}
+      {{ form.password_hash(class="form-control mb-3") }}
+      {{ form.submit(class="btn btn-outline-secondary") }}
+    </form>
+  {% endif %}
+{% endblock content %}

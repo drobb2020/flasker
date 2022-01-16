@@ -1,0 +1,13 @@
+{
+    "cSpell.words": [
+        "Codemy",
+        "Flasker",
+        "gunicorn",
+        "pymysql",
+        "rifqpovenjwdeo",
+        "tean",
+        "werkzeug",
+        "wtforms"
+    ],
+    "python.formatting.provider": "autopep8"
+}

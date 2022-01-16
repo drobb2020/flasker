@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if name_to_update.id == current_user.id %}
+  <h1>Update Profile...</h1>
+  <form action="/update/{{ name_to_update.id }}" method="POST" class="shadow p-3 mb-5 bg-body rounded">
+    {{ form.hidden_tag() }}
+    {{ form.name.label(class="form-label") }}
+    {{ form.name(class="form-control mb-3", value=name_to_update.name) }}
+    {{ form.username.label(class="form-label") }}
+    {{ form.username(class="form-control mb-3", value=name_to_update.username) }}
+    {{ form.email.label(class="form-label") }}
+    {{ form.email(class="form-control mb-3", value=name_to_update.email) }}
+    {{ form.about_author.label(class="form-label") }}
+    {{ form.about_author(class="form-control mb-3", value=name_to_update.about_author) }}
+    {{ form.favorite_quote.label(class="form-label") }}
+    {{ form.favorite_quote(class="form-control mb-3", value=name_to_update.favorite_quote) }}
+    {{ form.submit(class="btn btn-outline-secondary mb-3") }}
+    <a href="{{ url_for('delete', id=name_to_update.id) }}" class="btn btn-danger mb-3">delete</a>
+    <a href="{{ url_for('dashboard') }}" class="btn btn-outline-secondary mb-3">Return to Dashboard</a>
+  </form>
+{% else %}
+<div class="alert alert-warning alert-dismissible fade show mt-2 mb-2" role="alert"">
+    Sorry, you cannot update the profile of another user.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<div class="card mt-5 shadow p-3 mb-5 rounded">
+  <h5 class="card-header">Access Denied!</h5>
+  <div class="card-body">
+    <p class="card-text">Sorry, you cannot update the profile of another user.</p>
+    <a href="{{ url_for('dashboard') }}" class="btn btn-outline-secondary">Go Back</a>
+  </div>
+</div>
+
+{% endif %}
+
+{% endblock content %}

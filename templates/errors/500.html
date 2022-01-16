@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="content-section text-center">
+        <div>
+            <img class="img-thumbnail" src="{{ url_for('static', filename='500.png') }}" alt="" />
+        </div>
+        <h1>Woops!<br />Something went wrong :(</h1>
+        <p>We're experiencing some trouble on our end.</p>
+        <p>We are working hard to correct the problem.</p> 
+        <p>Have you tried turning it off and on again?</p>
+    </div>
+{% endblock content %}

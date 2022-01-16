@@ -1,0 +1,35 @@
+{% extends "base.html" %} 
+
+{% block content %} 
+
+<h1 class="mt-1 mb-3">Flasker Blog Posts</h1>
+{% for post in posts %}
+<div class="card mb-3 shadow p-3 bg-body rounded" style="max-width: 800px">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{{ url_for('static', filename='images/blog-img.png') }}" class="img-fluid rounded-start" alt="..." />
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{ post.title }}</h5>
+        <p class="card-text">
+            <small class="text-muted">Author: {{ post.poster.name }}</small>
+        </p>
+        <p class="card-text">
+          {{ post.content|safe }}
+        </p>
+        <p class="card-text">
+          <small class="text-muted">Posted: {{ post.date_posted }}</small>
+        </p>
+        <a class="btn btn-sm btn-outline-secondary" href="{{ url_for('post', id=post.id) }}">Read More</a>
+        {% if post.poster_id == current_user.id %}
+        <a class="btn btn-sm btn-outline-secondary ms-5" href="{{ url_for('edit_post', id=post.id) }}">Edit Post</a>
+        <a class="btn btn-sm btn-outline-danger" href="{{ url_for('delete_post', id=post.id) }}">Delete Post</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %} 
+
+{% endblock content %}

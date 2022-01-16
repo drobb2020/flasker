@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="content-section text-center">
+        <div>
+            <img class="img-thumbnail" src="{{ url_for('static', filename='images/404.jpg') }}" alt="" />
+        </div>
+        <h1>Don't Panic. Page Not Found (404)</h1>
+        <p>Well this is embarrassing, that page doesn't seem to exist.</p>
+    </div>
+{% endblock content %}

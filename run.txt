@@ -1,0 +1,10 @@
+# Start the virtual environment for the FLASK_APP
+. venv/bin/activate
+
+# Export the necessary environment variables
+export FLASK_ENV=development
+export FLASK_APP=hello.py
+
+# Run the application
+flask run
+

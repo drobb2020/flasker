@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="content-section text-center">
+        <div>
+            <img class="img-thumbnail" src="{{ url_for('static', filename='images/403.jpg') }}" alt="" />
+        </div>
+        <h1>Permission Denied (403)</h1>
+        <p>Please check your account and try again.</p>
+        <p>You can only modify or delete posts that you have created.</p>
+    </div>
+{% endblock content %}

@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>User Dashboard</h1>
+
+<div class="card mb-3" style="max-width: 800px;">
+  <div class="row g-0">
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{ current_user.name|title }}</h5>
+        <p class="card-text">
+          <p class="card-text mt-5 mb-1">
+            <strong>Username:</strong> {{ current_user.username }}
+          </p>
+          <p class="card-text mb-1"><strong>Full Name:</strong> {{ current_user.name }}</p>
+          <p class="card-text mb-1"><strong>Email:</strong> {{ current_user.email }}</p>
+          <p class="card-text mb-1"><strong>About Author:</strong> {{ current_user.about_author }}</p>
+          <p class="card-text mb-1"><strong>Favorite Quote:</strong> {{ current_user.favorite_quote }}</p>
+          <p class="card-text">
+            <p class="card-text mb-1"><strong>Profile Picture:</strong> {{ current_user.profile_pic }}</p>
+          <p class="card-text">
+            <strong>Date Joined:</strong> {{ current_user.date_added }}
+          </p>
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4 pt-4 pe-3 pb-4">
+      <img src="{{ url_for('static', filename='images/user.png') }}" class="img-fluid rounded-start" alt="Profile Pic">
+    </div>
+    <div class="card-footer">
+      <a href="{{ url_for('logout') }}" class="btn btn-outline-secondary btn-sm">Logout</a>
+      <a href="{{ url_for('update', id=current_user.id) }}" class="btn btn-outline-secondary btn-sm">Update Profile</a>
+      <a href="{{ url_for('delete', id=current_user.id) }}" class="btn btn-danger btn-sm">Delete</a>
+    </div>
+  </div>
+</div>
+
+<div class="card my-5" style="max-width: 800px;">
+  <h5 class="card-header">Update Profile...</h5>
+  <div class="card-body">
+    <form action="/dashboard" method="POST" enctype="multipart/form-data" class="shadow p-3 mb-1 bg-body rounded">
+      {{ form.hidden_tag() }}
+      {{ form.username.label(class="form-label") }}
+      {{ form.username(class="form-control mb-3", value=name_to_update.username) }}
+      {{ form.name.label(class="form-label") }}
+      {{ form.name(class="form-control mb-3", value=name_to_update.name) }}
+      {{ form.email.label(class="form-label") }}
+      {{ form.email(class="form-control mb-3", value=name_to_update.email) }}
+      {{ form.about_author.label(class="form-label") }}
+      <textarea name="about_author" class="form-control mb-3">{{ name_to_update.about_author }}</textarea>
+      {{ form.favorite_quote.label(class="form-label") }}
+      <textarea name="favorite_quote" class="form-control mb-3">{{ name_to_update.favorite_quote }}</textarea>
+      {{ form.profile_pic.label(class="form-label") }}
+      {{ form.profile_pic(class="form-control mb-3", value=name_to_update.profile_pic) }}
+      {{ form.submit(class="btn btn-outline-secondary btn-sm") }}
+    </form>
+  </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Edit Blog Post:</h1>
+  <form method="POST" class="shadow p-3 mb-5 bg-body rounded">
+    {{ form.hidden_tag() }}
+    {{ form.title.label(class="form-label") }}
+    {{ form.title(class="form-control mb-3") }}
+    {{ form.slug.label(class="form-label") }}
+    {{ form.slug(class="form-control mb-3") }}
+    {{ form.content.label(class="form-label") }}
+    {{ form.content(class="form-control mb-3", rows="10") }}
+    {{ form.submit(class="btn btn-outline-secondary my-3") }}
+  </form>
+  {{ ckeditor.load() }}
+  {{ ckeditor.config(name='content') }}
+{% endblock content %}

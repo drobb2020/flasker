@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-start">
+  <div class="col-8 text-center">
+    <h1></h1>
+    
+  </div>
+</div>
+<div class="clearfix">
+  <img src="{{ url_for ('static', filename='images/flask.png' ) }}" class="col-md-6 float-md-end mb-3 ms-md-3" alt="Flask">
+  <h1>Hello Flask World!</h1>
+  <p>This is the first webpage.</p>
+    <p>this tutorial will end up being a blog</p>
+    <p>This work is being coded by {{ first_name }}.</p>
+</div>
+{% endblock content %}
