@@ -21,7 +21,7 @@ ckeditor = CKEditor(app)
 # app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///users.db"
 # New DB
 # app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:Excess10n@localhost/flasker"
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://rifqpovenjwdeo:d3ef01952e4509273a650e8b6140b79ac95aa8334935a56dc15ed9320af436dd@ec2-3-227-15-75.compute-1.amazonaws.com:5432/d20e3tean27iim"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://rifqpovenjwdeo:d3ef01952e4509273a650e8b6140b79ac95aa8334935a56dc15ed9320af436dd@ec2-3-227-15-75.compute-1.amazonaws.com:5432/d20e3tean27iim"
 app.config['SECRET_KEY'] = '77371e3a4ade002aaf460ecb36e690d9'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 UPLOAD_FOLDER = 'static/images/'
