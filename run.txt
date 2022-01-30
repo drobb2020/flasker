@@ -3,7 +3,7 @@
 
 # Export the necessary environment variables
 export FLASK_ENV=development
-export FLASK_APP=hello.py
+export FLASK_APP=app.py
 
 # Run the application
 flask run
