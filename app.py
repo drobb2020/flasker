@@ -106,9 +106,8 @@ def add_user():
     our_users = Users.query.order_by(Users.date_added)
     return render_template('add_user.html', form=form, name=name, our_users=our_users, title='Add User')
 
+
 # Update User Function --------------------------------
-
-
 @app.route('/update/<int:id>', methods=['GET', 'POST'])
 @login_required
 def update(id):

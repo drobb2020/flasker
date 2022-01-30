@@ -6,6 +6,7 @@
         "pymysql",
         "rifqpovenjwdeo",
         "tean",
+        "venv",
         "werkzeug",
         "wtforms"
     ],

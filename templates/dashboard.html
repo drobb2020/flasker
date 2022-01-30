@@ -25,7 +25,12 @@
       </div>
     </div>
     <div class="col-md-4 pt-4 pe-3 pb-4">
-      <img src="{{ url_for('static', filename='images/user.png') }}" class="img-fluid rounded-start" alt="Profile Pic">
+      {% if current_user.profile_pic %}
+        <img src="{{ url_for('static', filename='images/' + current_user.profile_pic) }}" width="200" class="img-fluid rounded-start" alt="Profile Pic">
+      {% else %}
+        <img src="{{ url_for('static', filename='images/user.png') }}" width="200" class="img-fluid rounded-start" alt="Profile Pic">
+      {% endif %}
+      
     </div>
     <div class="card-footer">
       <a href="{{ url_for('logout') }}" class="btn btn-outline-secondary btn-sm">Logout</a>
