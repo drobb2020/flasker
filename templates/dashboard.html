@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>User Dashboard</h1>
+<h1 class="mt-4">User Dashboard</h1>
 
 <div class="card mb-3" style="max-width: 800px;">
   <div class="row g-0">
@@ -16,8 +16,6 @@
           <p class="card-text mb-1"><strong>Email:</strong> {{ current_user.email }}</p>
           <p class="card-text mb-1"><strong>About Author:</strong> {{ current_user.about_author }}</p>
           <p class="card-text mb-1"><strong>Favorite Quote:</strong> {{ current_user.favorite_quote }}</p>
-          <p class="card-text">
-            <p class="card-text mb-1"><strong>Profile Picture:</strong> {{ current_user.profile_pic }}</p>
           <p class="card-text">
             <strong>Date Joined:</strong> {{ current_user.date_added }}
           </p>

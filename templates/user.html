@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h1>Hello, I'm {{ name|capitalize }}!</h1>
+  <h1 class="mt-4">Hello, I'm {{ name|capitalize }}!</h1>
   <img src="{{ url_for ('static', filename='images/david.png') }}" alt="David">
   <p id="demo">This is stuff...</p>
 

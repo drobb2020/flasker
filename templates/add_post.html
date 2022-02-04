@@ -2,7 +2,7 @@
 
 {% block content %}
 {% if current_user.is_authenticated %}
-  <h1>Add Blog Post:</h1>
+  <h1 class="mt-4">Add Blog Post:</h1>
   <form method="POST" class="shadow p-3 mb-5 bg-body rounded">
     {{ form.hidden_tag() }}
     {{ form.title.label(class="form-label") }}

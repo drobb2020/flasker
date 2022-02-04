@@ -2,7 +2,7 @@
 
 {% block content %}
 {% if name_to_update.id == current_user.id %}
-  <h1>Update Profile...</h1>
+  <h1 class="mt-4">Update Profile...</h1>
   <form action="/update/{{ name_to_update.id }}" method="POST" class="shadow p-3 mb-5 bg-body rounded">
     {{ form.hidden_tag() }}
     {{ form.name.label(class="form-label") }}
@@ -20,7 +20,7 @@
     <a href="{{ url_for('dashboard') }}" class="btn btn-outline-secondary mb-3">Return to Dashboard</a>
   </form>
 {% else %}
-<div class="alert alert-warning alert-dismissible fade show mt-2 mb-2" role="alert"">
+<div class="alert alert-warning alert-dismissible fade show mt-4 mb-3" role="alert"">
     Sorry, you cannot update the profile of another user.
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>

@@ -1,11 +1,18 @@
 {
     "cSpell.words": [
+        "autopep",
+        "cffi",
         "Codemy",
         "davidrobb",
         "drobb",
         "Flasker",
         "flaskerdrobb",
         "gunicorn",
+        "itsdangerous",
+        "protobuf",
+        "psycopg",
+        "pycodestyle",
+        "pycparser",
         "pymysql",
         "rifqpovenjwdeo",
         "Roadmap",

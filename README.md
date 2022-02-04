@@ -78,7 +78,7 @@
 ## About The Project
 
 <a href="https://github.com/drobb2020/flasker">
-    <img src="images/flaskerdrobb.png" alt="Logo" width="400">
+    <img src="images/flaskerdrobb.png" alt="Logo" width="700">
   </a>
 
 Python Flask Blog Application
@@ -86,8 +86,10 @@ A flask application based on a tutorial from Codemy.com (Flask Friday's)
 
 ### Built With
 
+* [Python](https://www.python.org/)
 * [Flask](https://flask.palletsprojects.com/en/2.0.x/)
 * [VSCode](https://code.visualstudio.com/)
+* [Bootstrap 5](https://getbootstrap.com/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -96,7 +98,7 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-You will need a version of Python installed greater than 3.6. You can run this on Windows, MacOS, or Linux. My project was created on a Mac.
+You will need a version of Python installed greater than 3.6. You can run this on Windows, MacOS, or Linux. My project was created on a Mac, and the following installation commands are valid on a Mac, but are different on Windows!
 
 ### Installation
 
@@ -180,15 +182,15 @@ Project Link: [https://github.com/drobb2020/flasker](https://github.com/drobb202
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/drobb2020/repo.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/drobb2020/flasker.svg?style=for-the-badge
 [contributors-url]: https://github.com/drobb2020/flasker/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/drobb2020/repo.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/drobb2020/flasker.svg?style=for-the-badge
 [forks-url]: https://github.com/drobb2020/flasker/network/members
-[stars-shield]: https://img.shields.io/github/stars/drobb2020/repo.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/drobb2020/flasker.svg?style=for-the-badge
 [stars-url]: https://github.com/drobb2020/flasker/stargazers
-[issues-shield]: https://img.shields.io/github/issues/drobb2020/repo.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/drobb2020/flasker.svg?style=for-the-badge
 [issues-url]: https://github.com/drobb2020/flasker/issues
-[license-shield]: https://img.shields.io/github/license/drobb2020/repo.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/drobb2020/flasker.svg?style=for-the-badge
 [license-url]: https://github.com/drobb2020/flasker/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/drobb2020

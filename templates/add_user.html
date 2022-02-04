@@ -2,7 +2,7 @@
 
 {% block content %}
   {% if name %}
-    <h1>User Added</h1>
+    <h1 class="mt-4">User Added</h1>
       <table class="table table-hover table-bordered table-striped">
     {% for our_user in our_users %}
       <tr>
@@ -11,7 +11,7 @@
     {% endfor %}
   </table>
   {% else %}
-  <h1>User List:</h1>
+  <h1 class="mt-4">Register:</h1>
   <form method="POST" class="shadow p-3 mb-5 bg-body rounded">
     {{ form.hidden_tag() }}
     {{ form.username.label(class="form-label") }}
@@ -26,13 +26,13 @@
     {{ form.password_hash2(class="form-control mb-3") }}
     {{ form.submit(class="btn btn-outline-secondary mb-3") }}
   </form>
-<table class="table table-hover table-bordered table-striped">
+<!-- <table class="table table-hover table-bordered table-striped">
   {% for our_user in our_users %}
     <tr>
       <td><a href="{{ url_for('update', id=our_user.id) }}">{{ our_user.id }}.</a> {{ our_user.name }} - {{ our_user.username }} - {{ our_user.email }} - <a href="{{ url_for('delete', id=our_user.id) }}" class="btn btn-danger btn-sm">delete</a></td>
     </tr>
   {% endfor %}
-</table>
+</table> -->
 {% endif %}
 
 {% endblock content %}
