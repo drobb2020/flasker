@@ -1,3 +1,4 @@
+<div id="top"></div>
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
@@ -74,15 +75,19 @@
   </ol>
 </details>
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 <a href="https://github.com/drobb2020/flasker">
-    <img src="images/flaskerdrobb.png" alt="Logo" width="700">
+    <img src="images/flaskerdrobb.png" alt="Flasker Blog" width="700">
   </a>
 
 Python Flask Blog Application
 A flask application based on a tutorial from Codemy.com (Flask Friday's)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
 
@@ -91,14 +96,20 @@ A flask application based on a tutorial from Codemy.com (Flask Friday's)
 * [VSCode](https://code.visualstudio.com/)
 * [Bootstrap 5](https://getbootstrap.com/)
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ### Prerequisites
 
 You will need a version of Python installed greater than 3.6. You can run this on Windows, MacOS, or Linux. My project was created on a Mac, and the following installation commands are valid on a Mac, but are different on Windows!
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Installation
 
@@ -142,15 +153,26 @@ You will need a version of Python installed greater than 3.6. You can run this o
 
 Happy coding!
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 
 This is primarily for learning and honing my flask skills. I hope you enjoy learning flask as much as I do.
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <!-- ROADMAP -->
 ## Roadmap
 
+* [X] Add Changelog
+* [X] Add back to top links
+* [X] Add Support contact information
+* [ ] Add a custom image for each blog post
+
 See the [open issues](https://github.com/drobb2020/flasker/issues) for a list of proposed features (and known issues).
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -163,10 +185,14 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
 ## Contact
@@ -175,10 +201,14 @@ Your Name - [@davidrobb2](https://twitter.com/davidrobb2) - drobb2011@gmail.com
 
 Project Link: [https://github.com/drobb2020/flasker](https://github.com/drobb2020/flasker)
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
 * [John Elder @ codemy.com](https://www.youtube.com/playlist?list=PLCC34OHNcOtolz2Vd9ZSeSXWc8Bq23yEz)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

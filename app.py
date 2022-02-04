@@ -412,6 +412,12 @@ def about():
     return render_template('about.html', title='About')
 
 
+# Support Flasker Blog Function --------------------------------
+@app.route('/support')
+def support():
+    return render_template('support.html', title='Support')
+
+
 # Error 404 handling Function --------------------------------
 @app.errorhandler(404)
 def page_not_fount(error):
