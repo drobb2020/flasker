@@ -87,6 +87,27 @@
 Python Flask Blog Application
 A flask application based on a tutorial from Codemy.com (Flask Friday's)
 
+<a href="https://github.com/drobb2020/flasker">
+    <img src="images/screenshot-all-posts.png" alt="All Posts" width="100">
+  </a>
+  <a href="https://github.com/drobb2020/flasker">
+    <img src="images/screenshot-add-post.png" alt="Add Blog Post" width="100">
+  </a>
+  <a href="https://github.com/drobb2020/flasker">
+    <img src="images/screenshot-dashboard.png" alt="Author dashboard" width="100">
+  </a>
+  <a href="https://github.com/drobb2020/flasker">
+    <img src="images/screenshot-login.png" alt="Blog Login" width="100">
+  </a>
+  <a href="https://github.com/drobb2020/flasker">
+    <img src="images/screenshot-register.png" alt="Blog Register" width="100">
+  </a>
+  <a href="https://github.com/drobb2020/flasker">
+    <img src="images/screenshot-about.png" alt="Flasker About" width="100">
+  </a>
+  <a href="https://github.com/drobb2020/flasker">
+    <img src="images/screenshot-support.png" alt="Flasker Support" width="100">
+  </a>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
@@ -168,7 +189,9 @@ This is primarily for learning and honing my flask skills. I hope you enjoy lear
 * [X] Add Changelog
 * [X] Add back to top links
 * [X] Add Support contact information
+* [X] Add Author profile picture to each blog post
 * [ ] Add a custom image for each blog post
+* [ ] Add A forgotten password recover & password reset system
 
 See the [open issues](https://github.com/drobb2020/flasker/issues) for a list of proposed features (and known issues).
 
@@ -197,7 +220,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@davidrobb2](https://twitter.com/davidrobb2) - drobb2011@gmail.com
+DAvid Robb - [@davidrobb2](https://twitter.com/davidrobb2) - drobb2011@gmail.com
 
 Project Link: [https://github.com/drobb2020/flasker](https://github.com/drobb2020/flasker)
 
