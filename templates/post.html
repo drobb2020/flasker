@@ -3,12 +3,12 @@
 {% block content %} 
 
 <h1 class="mt-4 mb-3">{{ post.title }}</h1>
-<div class="card mb-3 shadow p-3 bg-body rounded" style="max-width: 800px">
+<div class="card mb-3 shadow p-3 bg-body rounded" style="max-width: 900px">
   <div class="row g-0">
-    <div class="col-md-4">
+    <div class="col-md-2">
       <img src="{{ url_for('static', filename='images/blog-img.png') }}" class="img-fluid rounded-start" alt="..." />
     </div>
-    <div class="col-md-8">
+    <div class="col-md-10">
       <div class="card-body">
         <h5 class="card-title">{{ post.title }}</h5>
         <p class="card-text">
@@ -17,14 +17,30 @@
         <p class="card-text">
           {{ post.content|safe }}
         </p>
-        {% if post.poster.about_author %}
-          <p class="mb-0">
-            <em>About the Author:</em>
-          </p>
-          <p class="card-text">
-            {{ post.poster.about_author }}
-          </p>
-        {% endif %}
+        
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-2">
+              {% if post.poster.profile_pic %}
+                <img class="pe-4" src="{{ url_for('static', filename='images/' + post.poster.profile_pic) }}" alt="Author" width="150" align="left">
+              {% else %}
+                <img class="pe-4" src="{{ url_for('static', filename='images/user.png') }}" alt="default" width="150" align="left">
+              {% endif %}
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">About {{ post.poster.name}}</h5>
+                <p class="card-text">
+                  {% if post.poster.about_author %}
+                    {{ post.poster.about_author }}
+                  {% else %}
+                    Author has no about profile yet...
+                  {% endif %}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         <p class="card-text">
           <small class="text-muted">Posted: {{ post.date_posted }}</small>
         </p>
